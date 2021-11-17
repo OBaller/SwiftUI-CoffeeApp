@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddCoffeeOrderView: View {
+    @Binding var isPresented: Bool
     @ObservedObject private var addCoffeeOrderVM = AddCoffeeOrderViewModel()
     var body: some View {
         NavigationView {
@@ -23,7 +24,7 @@ struct AddCoffeeOrderView: View {
                         }
                     }
                     
-                    Section(header: Text("SELECT COFFEE").font(.body), footer: Text("TOTAL").font(.body)) {
+                    Section(header: Text("SELECT COFFEE").font(.body), footer: OrderTotalView(total: self.addCoffeeOrderVM.total)) {
                         Picker("", selection: $addCoffeeOrderVM.size) {
                             Text("Small").tag("Small")
                             Text("Medium").tag("Medium")
@@ -35,7 +36,7 @@ struct AddCoffeeOrderView: View {
                 HStack {
                 Button("Place Order") {
                     self.addCoffeeOrderVM.placeOrder()
-//                    self.isPresented = false
+                    self.isPresented = false
                 }
                     
                 }.padding(EdgeInsets(top: 12, leading: 100, bottom: 12, trailing: 100))
@@ -51,7 +52,7 @@ struct AddCoffeeOrderView: View {
 
 struct AddCoffeeOrderView_Previews: PreviewProvider {
     static var previews: some View {
-        AddCoffeeOrderView()
+        AddCoffeeOrderView(isPresented: .constant(false))
     }
 }
 
