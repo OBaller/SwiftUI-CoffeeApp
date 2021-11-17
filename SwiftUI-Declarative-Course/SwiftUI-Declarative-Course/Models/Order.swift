@@ -12,5 +12,4 @@ struct Order: Codable {
     let coffeeName: String
     let total: Double
     let size: String
-    
 }

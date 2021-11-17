@@ -34,13 +34,13 @@ struct AddCoffeeOrderView: View {
                 }
                 
                 HStack {
-                Button("Place Order") {
-                    self.addCoffeeOrderVM.placeOrder()
-                    self.isPresented = false
-                }
+                    Button("Place Order") {
+                        self.addCoffeeOrderVM.placeOrder()
+                        self.isPresented = false
+                    }
                     
                 }.padding(EdgeInsets(top: 12, leading: 100, bottom: 12, trailing: 100))
-                    .foregroundColor(Color.white)
+                .foregroundColor(Color.white)
                 .background(Color(red: 46/255, green: 204/255, blue: 113/255))
                 .cornerRadius(10)
                 

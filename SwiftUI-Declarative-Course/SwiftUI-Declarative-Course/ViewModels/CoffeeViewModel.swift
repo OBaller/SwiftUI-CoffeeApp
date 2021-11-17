@@ -29,7 +29,5 @@ struct CoffeeViewModel {
     
     var price: Double {
         return self.coffee.price
-    }
-    
-    
+    }    
 }

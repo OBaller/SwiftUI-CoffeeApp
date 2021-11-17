@@ -75,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				B4BAD38F274280AC001BDB98 /* ViewModels */,
-				B45545412725A33D009754AC /* Extension */,
-				B45545402725A330009754AC /* Commons */,
 				B455453F2725A320009754AC /* Models */,
 				B455453E2725A312009754AC /* NetworkManager */,
 				B455452F2725A2E3009754AC /* SwiftUI_Declarative_CourseApp.swift */,
@@ -113,20 +111,6 @@
 				B46337372744E3560000FA1A /* CreateOrderResponse.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		B45545402725A330009754AC /* Commons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Commons;
-			sourceTree = "<group>";
-		};
-		B45545412725A33D009754AC /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		B4BAD38F274280AC001BDB98 /* ViewModels */ = {
