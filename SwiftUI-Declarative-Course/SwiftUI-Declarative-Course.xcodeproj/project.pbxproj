@@ -11,6 +11,10 @@
 		B45545322725A2E3009754AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45545312725A2E3009754AC /* ContentView.swift */; };
 		B45545342725A2F3009754AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45545332725A2F3009754AC /* Assets.xcassets */; };
 		B45545372725A2F3009754AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45545362725A2F3009754AC /* Preview Assets.xcassets */; };
+		B46337382744E3560000FA1A /* CreateOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46337372744E3560000FA1A /* CreateOrderResponse.swift */; };
+		B463373A2744EA7A0000FA1A /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46337392744EA7A0000FA1A /* AddCoffeeOrderViewModel.swift */; };
+		B463373C2744ED1A0000FA1A /* CoffeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B463373B2744ED1A0000FA1A /* CoffeeViewModel.swift */; };
+		B463373E2744F50F0000FA1A /* AddCoffeeOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B463373D2744F50F0000FA1A /* AddCoffeeOrderView.swift */; };
 		B4BAD38827426F66001BDB98 /* CoffeeHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAD38727426F65001BDB98 /* CoffeeHomeView.swift */; };
 		B4BAD38A27427038001BDB98 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAD38927427037001BDB98 /* Coffee.swift */; };
 		B4BAD38C27427507001BDB98 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BAD38B27427506001BDB98 /* Order.swift */; };
@@ -26,6 +30,10 @@
 		B45545332725A2F3009754AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B45545362725A2F3009754AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B45545382725A2F3009754AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B46337372744E3560000FA1A /* CreateOrderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderResponse.swift; sourceTree = "<group>"; };
+		B46337392744EA7A0000FA1A /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
+		B463373B2744ED1A0000FA1A /* CoffeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewModel.swift; sourceTree = "<group>"; };
+		B463373D2744F50F0000FA1A /* AddCoffeeOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderView.swift; sourceTree = "<group>"; };
 		B4BAD38727426F65001BDB98 /* CoffeeHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeHomeView.swift; sourceTree = "<group>"; };
 		B4BAD38927427037001BDB98 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		B4BAD38B27427506001BDB98 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -100,6 +108,7 @@
 			children = (
 				B4BAD38927427037001BDB98 /* Coffee.swift */,
 				B4BAD38B27427506001BDB98 /* Order.swift */,
+				B46337372744E3560000FA1A /* CreateOrderResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				B4BAD390274280CE001BDB98 /* OrderListViewModel.swift */,
+				B46337392744EA7A0000FA1A /* AddCoffeeOrderViewModel.swift */,
+				B463373B2744ED1A0000FA1A /* CoffeeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -131,6 +142,7 @@
 			children = (
 				B4BAD38727426F65001BDB98 /* CoffeeHomeView.swift */,
 				B4BAD3932742A684001BDB98 /* OrderListView.swift */,
+				B463373D2744F50F0000FA1A /* AddCoffeeOrderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,12 +218,16 @@
 			files = (
 				B4BAD38827426F66001BDB98 /* CoffeeHomeView.swift in Sources */,
 				B4BAD3942742A685001BDB98 /* OrderListView.swift in Sources */,
+				B46337382744E3560000FA1A /* CreateOrderResponse.swift in Sources */,
+				B463373E2744F50F0000FA1A /* AddCoffeeOrderView.swift in Sources */,
 				B45545322725A2E3009754AC /* ContentView.swift in Sources */,
 				B4BAD38C27427507001BDB98 /* Order.swift in Sources */,
+				B463373C2744ED1A0000FA1A /* CoffeeViewModel.swift in Sources */,
 				B45545302725A2E3009754AC /* SwiftUI_Declarative_CourseApp.swift in Sources */,
 				B4BAD391274280CF001BDB98 /* OrderListViewModel.swift in Sources */,
 				B4BAD38E274278D3001BDB98 /* NetworkService.swift in Sources */,
 				B4BAD38A27427038001BDB98 /* Coffee.swift in Sources */,
+				B463373A2744EA7A0000FA1A /* AddCoffeeOrderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
